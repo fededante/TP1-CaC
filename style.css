@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -13,11 +13,12 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-image: linear-gradient(rgba(235, 171 ,183, 0.55), rgba(0, 0 ,0, 0.55)), url(https://images.unsplash.com/photo-1582794543462-0d7922e50cf5?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center 0%; 
     background-size: cover;
-    position: relative;
+    position: fixed;
+    z-index: 2;
 }
 
 header picture{
@@ -32,9 +33,21 @@ header .logo{
     width: auto;
     height: auto;
     width: 100%;
-    max-height: 100px;
+    height: 85px;
 }
 
+header .header-txt {
+    line-height: 100px;
+    color: white;
+}
+
+.header-txt h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-size: 3.5em;
+    position: absolute;
+    right: 45%;
+}
 nav {
     display: flex;
     padding: 10px 40px;
@@ -61,11 +74,11 @@ nav a:hover{
     font-weight: bold;
 }
 
-/* ---------------- SECCION PRINCIPAL ---------------- */
+/* ---------------- SECCION PRINCIPAL (VIDEO)  ---------------- */
 
 .present{
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     padding:0px;
     display: flex;
     justify-content: space-around;
@@ -102,4 +115,75 @@ nav a:hover{
     font-size: 5em;
     color: wheat;
     margin: 100px 100px;
+}
+
+/* ---------------- BOSTON ES --------------- */
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+}
+
+.boston-es{
+    background-color: wheat;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+.boston-es h2{
+    margin: 0px 5px 10px 5px;
+    padding: 1%;
+    font-size: 3em;
+}
+
+.img-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-col img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.img-col h3{
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición */
+    background-color: rgba(255, 255, 255, 0.55); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ----------- FOOTER ----------- */
+footer{
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    border-top: solid 0.5px rgb(0, 0, 0);
+}
+
+footer h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.foot-text{
+    margin: auto;
+    width: 70%;
+}
+
+.icons .fa{
+    color: #ad727e;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
 }
