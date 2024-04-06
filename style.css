@@ -19,12 +19,13 @@ header{
 }
 
 header .logo{
+    padding: 10px;
     vertical-align: middle;
-    margin: 15px 0;
+    margin-left: 15px;
     width: auto;
     height: auto;
     max-width: 80%;
-    max-height: 170px;
+    max-height: 140px;
 }
 
 nav {
@@ -35,9 +36,10 @@ nav {
 }
 
 nav a{
+    font-size: 1.2em;
     margin: 15px;
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 
 
